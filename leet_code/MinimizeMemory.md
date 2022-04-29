@@ -18,7 +18,10 @@ m = 2
 
 Select a fixed contiguous segment size of m = 2. The best single contiguous segment of size 2 to delete is the segment composed of process 5, which is 20KB, and process 4, which is 13KB. This results in the minimum total main memory consumption of 10KB + 4KB + 8KB = 22KB. Return 22.
 
-![Alt text](/leet_code/challenge_img.png "Title")
+<!-- ![Alt text](/leet_code/challenge_img.png "Title")
+ -->
+
+<img src="relative/path/in/repository/to/image.svg" width="100"/>
 
 The `cd` command allows you to change directories. Assuming you are at the directory where you issued the cloning command, type the following on your terminal.
 
