@@ -28,4 +28,4 @@ process = [10, 4, 8, 1]
 n = len(process)
 m = 2
 
-minimize(process, n, m)
+print(minimize(process, n, m))
