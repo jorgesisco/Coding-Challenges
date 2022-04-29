@@ -1,20 +1,24 @@
 # Deploying the model
 
-## Introduction
+## Challenge:
 
-Welcome to my Machine Learning....
+The virtual private server on the company's Web Service cloud is used to run programs that help perform calculations on large data sets. Recently, the performance of some programs has
+degraded.
 
-This can be done via 1 method: using `Python Virtual Environments`.
+Technical support has recommended that processes that consume a lot of main memory should be deleted. Unfortunately, the command-line shell that you use only lets you delete processes that form a single contiguous segment of a given fixed size. The size of a contiguous segment is the number of contiguous processes in main memory.
 
-If you already have a conda installation available on your computer, we recommend that you use the virtual environment method. If this is not the case, choose the Docker method as it is easier to set up.
+Find the minimum amount of main memory used by all of your processes in your instance after you delete a contiguous segment of processes.
 
-As a general note, the commands in this tutorial are meant to be run within a terminal. To begin you need to **clone this repo in your local filesystem and `cd` to the ML-Model-Production**.
-
-To clone the repo use this command:
+Example:
 
 ```bash
-git clone https://github.com/jorgesisco/Fake-News-Detection-Machine-Learning-Pipeline.git
+process = [10, 4, 8, 13, 201
+m = 2
 ```
+
+Select a fixed contiguous segment size of m = 2. The best single contiguous segment of size 2 to delete is the segment composed of process 5, which is 20KB, and process 4, which is 13KB. This results in the minimum total main memory consumption of 10KB + 4KB + 8KB = 22KB. Return 22.
+
+![Alt text](/leet_code/challenge_img.png "Title")
 
 The `cd` command allows you to change directories. Assuming you are at the directory where you issued the cloning command, type the following on your terminal.
 
