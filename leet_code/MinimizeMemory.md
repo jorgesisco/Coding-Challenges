@@ -1,6 +1,4 @@
-# Deploying the model
-
-## Challenge:
+# Challenge
 
 The virtual private server on the company's Web Service cloud is used to run programs that help perform calculations on large data sets. Recently, the performance of some programs has
 degraded.
