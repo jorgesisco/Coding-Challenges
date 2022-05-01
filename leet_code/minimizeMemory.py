@@ -1,31 +1,29 @@
-def minimize(process, n, m):
-	record = {}
+def minimizeMemory(process, n, m):
 
-	while n%2==0:
-		for i in range(0, n, m):
-			if process[i] == process[-1]:
-				break
+	if n >= 1 and n <= 10^3 and n%2==0 and m <= n <= 10^5:
+		a = 0
+		record = []
+		idx = 0
+		
+		for i in range(0, n-1):
+			record.append(sum(process[i:i+m]))
+			
+			if a <= sum(process[i:i+m]):
+				a = sum(process[i:i+m])
 
-			record[process[i]] = process[i]+process[i+1]
+				if a == max(record):
+					idx = i
 
-		del record[max(record, key=record.get)]
+		for i in range(0, m):
+			process.pop(idx)
 
-		return sum(record.values())
-		break 
+		return sum(process)
 
-	for i in range(0, n):
-		if process[i] == process[-1]:
-			break
-
-		record[process[i]] = process[i]+process[i+1]
-
-	del record[max(record, key=record.get)]
-
-
-	return sum(record.keys())
+	else:
+		return "The amount of contiguous segments to delete exceeds the lenght of given Array :(, try with a lower m value :D"
 
 process = [10, 4, 8, 1]
 n = len(process)
 m = 2
 
-print(minimize(process, n, m))
+print(minimizeMemory(process, n, m))
