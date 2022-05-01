@@ -1,6 +1,6 @@
 def minimizeMemory(process, n, m):
 
-	if n >= 1 and n <= 10^3 and n%2==0 and m <= n <= 10^5:
+	if n >= 1 and n <= 10^3 and m <= n <= 10^5:
 		a = 0
 		record = []
 		idx = 0
@@ -22,7 +22,7 @@ def minimizeMemory(process, n, m):
 	else:
 		return "Be sure the constrains are according to the given condition in the problem statement :D"
 
-process = [10, 4, 8, 1]
+process = [10, 4, 8, 1, 14]
 n = len(process)
 m = 2
 
