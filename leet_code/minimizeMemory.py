@@ -20,7 +20,7 @@ def minimizeMemory(process, n, m):
 		return sum(process)
 
 	else:
-		return "The amount of contiguous segments to delete exceeds the lenght of given Array :(, try with a lower m value :D"
+		return "Be sure the constrains are according to the given condition in the problem statement :D"
 
 process = [10, 4, 8, 1]
 n = len(process)
