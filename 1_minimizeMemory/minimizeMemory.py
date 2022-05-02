@@ -26,4 +26,5 @@ process = [10, 4, 8, 1, 14]
 n = len(process)
 m = 2
 
-print(minimizeMemory(process, n, m))
+if __name__ == "__main__":
+	print(minimizeMemory(process, n, m))
