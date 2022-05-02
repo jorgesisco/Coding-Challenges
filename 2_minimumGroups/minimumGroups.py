@@ -1,5 +1,3 @@
-import numpy as np
-
 def minimumGroups(awards, k):
 	awards = sorted(awards)
 	n = len(awards)
